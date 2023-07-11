@@ -22,8 +22,36 @@ namespace InterfaceExercise
 
 
         //SUV
-        public double CargoSize { get; set; }
+        public double CargoSize { get; set; } //cubic feet
 
         public bool ThirdRowSeating { get; set; }
+
+        public string HasThirdRowSeating(bool thirdRowSeating)
+        {
+            if (ThirdRowSeating == true)
+            {
+                return "The SUV has third row seating.";
+            }
+            else
+            {
+                return "The SUV does not have third row seating.";
+            }
+
+
+        }
+
+        public string LuxuryBrand(bool luxuryBrand)
+        {
+            if (IsLuxuryBrand == true)
+            {
+                return "luxury";
+            }
+            else
+            {
+                return "non-luxury";
+            }
+        }
+
     }
+
 }

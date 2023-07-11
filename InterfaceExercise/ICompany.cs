@@ -6,10 +6,13 @@ using System.Threading.Tasks;
 
 namespace InterfaceExercise
 {
-    interface ICompany
+    public interface ICompany
     {
         public string CountryOfOrigin { get; set; }
         public bool IsLuxuryBrand { get; set; }
+
+       
+
 
     }
 }
